@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/keikun17/bitcoin-3rd-party-apis.git
+  revision: 4911a49b823d9ee29fdb68a275cfbcdf797f7b59
+  specs:
+    bitcoin-3rd-party-apis (0.3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -30,12 +36,10 @@ GEM
     arel (5.0.0)
     atomic (1.1.15)
     bcrypt-ruby (3.1.1)
-    blockchain-wallet (0.0.5)
-      immutable_struct
-      oj
     bootstrap-sass (2.3.2.0)
       sass (~> 3.2)
     builder (3.2.2)
+    coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -50,6 +54,10 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.0.2)
+    formtastic (2.2.1)
+      actionpack (>= 3.0)
+    formtastic-bootstrap (3.0.0)
+      formtastic (>= 2.2)
     haml (4.0.5)
       tilt
     haml-rails (0.5.3)
@@ -58,8 +66,10 @@ GEM
       haml (>= 3.1, < 5.0)
       railties (>= 4.0.1)
     hike (1.2.3)
+    httparty (0.13.0)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.6.9)
-    immutable_struct (1.1.1)
     jbuilder (2.0.3)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
@@ -70,15 +80,20 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    method_source (0.8.2)
     mime-types (1.25.1)
     minitest (5.3.0)
     multi_json (1.8.4)
+    multi_xml (0.5.5)
     mysql2 (0.3.14)
-    oj (2.5.5)
     orm_adapter (0.4.0)
     polyglot (0.3.4)
     protected_attributes (1.0.5)
       activemodel (>= 4.0.1, < 5.0)
+    pry (0.9.12.3)
+      coderay (~> 1.0)
+      method_source (~> 0.8)
+      slop (~> 3.4)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -108,6 +123,7 @@ GEM
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
+    slop (3.4.7)
     spring (1.1.2)
     sprockets (2.11.0)
       hike (~> 1.2)
@@ -139,15 +155,19 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  blockchain-wallet (~> 0.0.5)
+  bitcoin-3rd-party-apis!
   bootstrap-sass
   coffee-rails (~> 4.0.0)
   devise
+  formtastic (~> 2.2.0)
+  formtastic-bootstrap
   haml-rails
+  httparty
   jbuilder (~> 2.0)
   jquery-rails
   mysql2
   protected_attributes
+  pry
   rails (= 4.1.0.rc1)
   sass-rails (~> 4.0.1)
   sdoc (~> 0.4.0)

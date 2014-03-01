@@ -47,4 +47,6 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'blockchain-wallet', '~> 0.0.5'
+gem 'bitcoin-3rd-party-apis', github: 'keikun17/bitcoin-3rd-party-apis'
+gem 'httparty'
+gem 'pry'
