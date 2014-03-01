@@ -14,6 +14,8 @@
 ActiveRecord::Schema.define(version: 20140301051927) do
 
   create_table "pots", force: true do |t|
+    t.string   "name"
+    t.string   "wallet_address"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

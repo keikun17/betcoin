@@ -1,4 +1,23 @@
-
 = render 'shared/header'
 
-test
+.row
+  .col-lg-12
+    = link_to "New", new_pot_path, class: 'btn btn-primary'
+
+.row
+  .col-lg-12
+    %table.table
+      %tr
+        %th ID
+        %th Name
+        %th Wallet Address
+        %th Received
+        %th
+      - @pots.each do |pot|
+        %tr
+          %td= pot.id
+          %td= link_to pot.name, pot_path(pot)
+          %td= pot.wallet_address
+          %td= pot.total_received
+          %td
+            = link_to 'Delete', pot_path(pot), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-mini btn-danger'

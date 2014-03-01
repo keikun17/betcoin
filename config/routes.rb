@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  resources :matches
+
   resources :pots
+  resources :transactions
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
