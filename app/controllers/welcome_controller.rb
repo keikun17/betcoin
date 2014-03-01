@@ -3,5 +3,6 @@ class WelcomeController < ApplicationController
 
   def index
     @pots = Pot.all
+    @matches = Match.all
   end
 end

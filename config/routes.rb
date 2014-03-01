@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   resources :matches
 
   resources :pots
   resources :transactions
+  resources :matches
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
