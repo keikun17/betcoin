@@ -1,0 +1,6 @@
+= semantic_form_for @pot do |f|
+  = f.inputs name: 'New Pot' do
+    = f.input :name
+    = f.input :wallet_address, label: 'Wallet Address (eg 1Gka8G1Lf7uBicayMTjscahpAh2Hk8hEoJ)'
+  = f.actions do
+    = f.action :submit, as: 'button'
