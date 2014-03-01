@@ -3,8 +3,13 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0.rc1'
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'ransack', github: 'activerecord-hackery/ransack', branch: 'rails-4.1'
+gem 'polyamorous', github: 'activerecord-hackery/polyamorous'
 
-gem 'devise'
+gem 'meta_search'
+
+gem 'devise', '~> 3.2'
 
 gem 'protected_attributes'
 
@@ -20,7 +25,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
-gem 'formtastic', '~> 2.2.0'
+gem 'formtastic', github: 'justinfrench/formtastic'
 gem 'formtastic-bootstrap'
 
 # Use jquery as the JavaScript library
