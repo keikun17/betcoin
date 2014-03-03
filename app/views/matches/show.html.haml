@@ -1,1 +1,26 @@
-Test
+%h1= @match.name
+%h3= @match.game
+
+
+- @match.pots.each do |pot|
+
+  %div
+    %h1 Bets for #{pot.name}
+  .pull-right
+
+    %h3
+      TOTAL :
+      = pot.total_received
+
+  %table.table
+    %tr
+      %th Address
+      %th Value
+    - pot.show_transactions["txs"].each do |tx|
+      - tx['inputs'].each do |input|
+        %tr
+          %td= input['prev_out']['addr']
+          %td= BigDecimal(input['prev_out']['value']) / (10 ** 8)
+
+
+

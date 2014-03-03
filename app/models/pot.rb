@@ -1,5 +1,6 @@
 class Pot < ActiveRecord::Base
-  attr_accessible :name, :wallet_address
+  belongs_to :match
+  attr_accessible :name, :wallet_address, :match_id
 
   def total_received
     begin
