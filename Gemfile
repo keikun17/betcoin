@@ -7,11 +7,11 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'ransack', github: 'activerecord-hackery/ransack', branch: 'rails-4.1'
 gem 'polyamorous', github: 'activerecord-hackery/polyamorous'
 
-gem 'meta_search'
+# gem 'meta_search'
 
 gem 'devise', '~> 3.2'
 
-gem 'protected_attributes'
+gem 'protected_attributes', git: 'https://github.com/rails/protected_attributes.git'
 
 gem 'mysql2'
 # Use SCSS for stylesheets

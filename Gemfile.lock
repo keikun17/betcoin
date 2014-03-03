@@ -47,6 +47,13 @@ GIT
   specs:
     bitcoin-3rd-party-apis (0.3.2)
 
+GIT
+  remote: https://github.com/rails/protected_attributes.git
+  revision: 875689d550f28a5ce327310c51098443e1adcb03
+  specs:
+    protected_attributes (1.0.5)
+      activemodel (>= 4.0.1, < 5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -140,11 +147,6 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    meta_search (0.5.4)
-      actionpack (>= 3.0.0.beta4)
-      activerecord (>= 3.0.0.beta4)
-      activesupport (>= 3.0.0.beta4)
-      arel (>= 0.4.0)
     method_source (0.8.2)
     mime-types (1.25.1)
     minitest (5.3.0)
@@ -153,8 +155,6 @@ GEM
     mysql2 (0.3.15)
     orm_adapter (0.5.0)
     polyglot (0.3.4)
-    protected_attributes (1.0.5)
-      activemodel (>= 4.0.1, < 5.0)
     pry (0.9.12.6)
       coderay (~> 1.0)
       method_source (~> 0.8)
@@ -233,10 +233,9 @@ DEPENDENCIES
   httparty
   jbuilder (~> 2.0)
   jquery-rails
-  meta_search
   mysql2
   polyamorous!
-  protected_attributes
+  protected_attributes!
   pry
   rails (= 4.1.0.rc1)
   ransack!
